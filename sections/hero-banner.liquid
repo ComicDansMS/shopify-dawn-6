@@ -26,10 +26,12 @@
       }}
     </div>
   {%- endif -%}
-  
-  <a href="#" class="hero-banner__button">
-    SOME TEXT
-  </a>
+
+  {%- for link in section.settings.menu.links -%}
+    <a href="{{ link.url }}" class="hero-banner__button">
+      {{ link.title | escape }}
+    </a>
+  {%- endfor -%}
     
   
 
@@ -88,6 +90,12 @@
       "unit": "%",
       "label": "t:sections.image-banner.settings.image_overlay_opacity.label",
       "default": 0
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "default": "main-menu",
+      "label": "Menu"
     }
   ],
   "blocks": [
