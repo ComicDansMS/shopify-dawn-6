@@ -101,16 +101,18 @@
                 endif
               -%}
 
-              {{ block.settings.logo | image_url: width: 1500 | image_tag:
-                loading: 'lazy',
-                width: block.settings.logo.width,
-                height: logo_height,
-                class: logo_class,
-                alt: block.settings.logo.alt | escape
-              }}
+              <div class="banner__logo">
+                {{ block.settings.logo | image_url: width: 1500 | image_tag:
+                  loading: 'lazy',
+                  width: block.settings.logo.width,
+                  height: logo_height,
+                  class: logo_class,
+                  alt: block.settings.logo.alt | escape
+                }}
+              </div>
 
             {%- endif -%}
-            
+
           {%- when 'heading' -%}
             <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
               <span>{{ block.settings.heading | escape }}</span>
