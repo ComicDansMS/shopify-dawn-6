@@ -10,12 +10,6 @@
             "heading_size": "h0"
           }
         },
-        "e6c95346-c4f4-40fb-b4e6-af75968b0288": {
-          "type": "image",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/580b57fcd9996e24bc43c51f.png"
-          }
-        },
         "text": {
           "type": "text",
           "settings": {
@@ -37,7 +31,6 @@
       },
       "block_order": [
         "heading",
-        "e6c95346-c4f4-40fb-b4e6-af75968b0288",
         "text",
         "button"
       ],
