@@ -10,11 +10,10 @@
             "heading_size": "h0"
           }
         },
-        "text": {
-          "type": "text",
+        "6ae8aae8-4f98-4d9c-ab53-68fdb574e63e": {
+          "type": "image",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "logo": "shopify:\/\/shop_images\/580b57fcd9996e24bc43c51f.png"
           }
         },
         "button": {
@@ -27,19 +26,12 @@
             "button_link_2": "",
             "button_style_secondary_2": false
           }
-        },
-        "6ae8aae8-4f98-4d9c-ab53-68fdb574e63e": {
-          "type": "image",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/580b57fcd9996e24bc43c51f.png"
-          }
         }
       },
       "block_order": [
         "heading",
-        "text",
-        "button",
-        "6ae8aae8-4f98-4d9c-ab53-68fdb574e63e"
+        "6ae8aae8-4f98-4d9c-ab53-68fdb574e63e",
+        "button"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/ken-cheung-KonWFWUaAuk-unsplash.jpg",
