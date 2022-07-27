@@ -36,6 +36,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/ken-cheung-KonWFWUaAuk-unsplash.jpg",
+        "image_3": "shopify:\/\/shop_images\/png-transparent-google-logo-google-logo-g-suite-google-text-logo-symbol.png",
         "image_overlay_opacity": 10,
         "image_height": "large",
         "adapt_height_first_image": false,
