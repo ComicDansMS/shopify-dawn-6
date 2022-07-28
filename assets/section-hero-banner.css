@@ -24,16 +24,6 @@
   margin: 0 auto;
 }
 
-/* .sub-menu {
-  visibility: hidden;
-  height: 0;
-}
-
-.open.sub-menu {
-  visibility: visible;
-  height: auto;
-} */
-
 .nav-item {
   display: flex;
   margin-bottom: 2rem;
