@@ -1,31 +1,44 @@
-.hero-banner {
-  height: 100vh;
-  border: solid 2px red;
-  padding: 2rem;
-  background-size: cover;
-}
-
-.hero-banner__button {
-  display: block;
-  margin: 0 auto;
-  padding: 1rem;
-  width: max-content;
-  background: white;
-  color: black;
-  font-size: 10rem;
-  font-weight: 900;
-  border-radius: 2rem;
-  text-decoration: none;
-  mix-blend-mode:screen;
-}
-
 .banner__logo {
-  max-width: 40rem;
+  max-width: 30rem;
   margin: 0 auto;
+  margin-bottom: 3rem;
 }
 
 .banner__logo img {
   object-fit: contain;
   width: 100%;
   height: 100%;
+}
+
+.hero-banner {
+  height: 100vh;
+  padding: 2rem;
+  background-size: cover;
+}
+
+.hero-nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.nav-item {
+  display: flex;
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+  background: white;
+  color: black;
+  font-size: 5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  mix-blend-mode:screen;
+}
+
+.nav-item--link {
+  font-size: 4rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
 }
