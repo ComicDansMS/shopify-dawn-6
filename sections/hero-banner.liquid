@@ -30,28 +30,27 @@
   <hero-nav>
     <ul class="hero-nav-menu list-unstyled">
       {%- for link in section.settings.menu.links -%}
-        {%- if link.links != blank -%}
-        <details>
-          <summary class="nav-item">
+        <li>
+        {%- if link.links == blank -%}
+          <a href="#" class="nav-item">
             {{ link.title | escape }}
-          </summary>
-
-          <ul class="hero-nav-menu sub-menu list-unstyled">          
-            {%- for childlink in link.links -%}
-              <li>
-                <a href="#" class="nav-item nav-item--child">
-                  {{ childlink.title | escape }}
-                </a>
-              </li>
-            {%- endfor -%}
-          </ul>
-        </details>
+          </a>
         {%- else -%}
-          <li>
-            <a href="#" class="nav-item">
+          <details>
+            <summary class="nav-item">
               {{ link.title | escape }}
-            </a>
-          </li>
+            </summary>
+
+            <ul class="hero-nav-menu sub-menu list-unstyled">          
+              {%- for childlink in link.links -%}
+                <li>
+                  <a href="#" class="nav-item nav-item--child">
+                    {{ childlink.title | escape }}
+                  </a>
+                </li>
+              {%- endfor -%}
+            </ul>
+          </details>
         {%- endif -%}
       {%- endfor -%}
     </ul>
