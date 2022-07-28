@@ -44,7 +44,7 @@
             <ul class="hero-nav-menu sub-menu list-unstyled">          
               {%- for childlink in link.links -%}
                 <li>
-                  <a href="#" class="nav-item nav-item--child">
+                  <a href="{{ childlink.url }}" class="nav-item nav-item--child">
                     {{ childlink.title | escape }}
                   </a>
                 </li>
