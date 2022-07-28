@@ -24,21 +24,39 @@
   margin: 0 auto;
 }
 
+/* .sub-menu {
+  visibility: hidden;
+  height: 0;
+}
+
+.open.sub-menu {
+  visibility: visible;
+  height: auto;
+} */
+
 .nav-item {
   display: flex;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   padding: 0 2rem;
   background: white;
   color: black;
-  font-size: 5rem;
-  border-radius: 1rem;
-  text-decoration: none;
-  mix-blend-mode:screen;
-}
-
-.nav-item--link {
   font-size: 4rem;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
+  border-radius: 1rem;
+  text-decoration: none;
+  mix-blend-mode: screen;
+}
+
+.nav-item--child {
+  margin-bottom: 1rem;
+}
+
+.hero-nav-menu li:last-child .nav-item--child {
+  margin-bottom: 2rem;
+}
+
+.nav-item--child {
+  font-size: 2rem;
 }

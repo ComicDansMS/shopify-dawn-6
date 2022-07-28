@@ -906,10 +906,11 @@ class HeroNav extends HTMLElement {
   constructor() {
     super();
 
-    this.parentButtons = this.querySelectorAll(".item-parent");
+    this.navItems = this.querySelectorAll('.nav-item');
+    console.log(this.navItems)
 
-    this.parentButtons.forEach(button => {
-      button.addEventListener('click', (event) => {
+    this.navItems.forEach(item => {
+      item.addEventListener('click', (event) => {
         this.handleParentClick(event);
       })
     })
