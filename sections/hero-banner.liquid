@@ -27,14 +27,16 @@
     </div>
   {%- endif -%}
 
-  <hero-nav>
+  <nav>
     <ul class="hero-nav-menu list-unstyled">
       {%- for link in section.settings.menu.links -%}
         <li>
         {%- if link.links == blank -%}
-          <a href="{{ link.url }}" class="nav-item">
-            {{ link.title | escape }}
-          </a>
+          <div class="nav-item">
+            <a href="{{ link.url }}" class="full-unstyled-link">
+              {{ link.title | escape }}
+            </a>
+          </div>
         {%- else -%}
           <details>
             <summary class="nav-item">
@@ -44,9 +46,11 @@
             <ul class="hero-nav-menu sub-menu list-unstyled">          
               {%- for childlink in link.links -%}
                 <li>
-                  <a href="{{ childlink.url }}" class="nav-item nav-item--child">
-                    {{ childlink.title | escape }}
-                  </a>
+                  <div class="nav-item nav-item--child">
+                    <a href="{{ childlink.url }}" class="full-unstyled-link">
+                      {{ childlink.title | escape }}
+                    </a>
+                  </div>
                 </li>
               {%- endfor -%}
             </ul>
@@ -54,7 +58,7 @@
         {%- endif -%}
       {%- endfor -%}
     </ul>
-  </hero-nav>
+  </nav>
     
   
 </div>

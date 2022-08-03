@@ -901,26 +901,3 @@ class VariantRadios extends VariantSelects {
 customElements.define('variant-radios', VariantRadios);
 
 
-
-class HeroNav extends HTMLElement {
-  constructor() {
-    super();
-
-    this.navItems = this.querySelectorAll('.nav-item');
-    console.log(this.navItems)
-
-    this.navItems.forEach(item => {
-      item.addEventListener('click', (event) => {
-        this.handleParentClick(event);
-      })
-    })
-  }
-
-  handleParentClick(event) {
-    console.log(event.currentTarget);
-
-    event.currentTarget.classList.toggle('open');
-  }
-}
-
-customElements.define('hero-nav', HeroNav);

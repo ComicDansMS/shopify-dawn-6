@@ -29,24 +29,19 @@
   margin-bottom: 2rem;
   padding: 0 2rem;
   background: white;
+  border-radius: 1rem;
+  mix-blend-mode: screen;
   color: black;
   font-size: 4rem;
   font-weight: 700;
-  text-decoration: none;
   text-transform: uppercase;
-  border-radius: 1rem;
-  text-decoration: none;
-  mix-blend-mode: screen;
 }
 
 .nav-item--child {
   margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
 .hero-nav-menu li:last-child .nav-item--child {
   margin-bottom: 2rem;
-}
-
-.nav-item--child {
-  font-size: 2rem;
 }
