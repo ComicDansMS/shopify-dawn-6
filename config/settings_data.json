@@ -120,6 +120,8 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
+          "collection_image_one": "shopify:\/\/shop_images\/Screen_Shot_2022-08-03_at_8.09.27_pm.png",
+          "collection_image_two": "shopify:\/\/shop_images\/Screen_Shot_2022-08-03_at_8.09.04_pm.png",
           "logo_width": 90,
           "logo_position": "middle-left",
           "menu": "main-menu",
